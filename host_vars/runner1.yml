@@ -1,0 +1,11 @@
+---
+gitlab_runner_list:
+  - description: Runner 1 example
+    url: https://gitlab.com/
+    executor: shell
+    registration-token: h_J_SkMy7kXkVCyVDTU4
+    tag-list: runner1
+  
+- hosts: all
+  roles:
+    - role: solval.gitlab_runner
